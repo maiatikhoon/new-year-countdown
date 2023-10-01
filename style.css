@@ -1,0 +1,106 @@
+
+* {
+     margin:0; 
+     padding:0 ;
+     box-sizing: border-box; 
+     font-family: sans-serif;
+}
+
+
+
+.container {
+     width :100vw ; 
+     height: 100vh; 
+     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://cdn.wallpapersafari.com/18/69/eYQ4Cq.jpg"); 
+     background-position: center; 
+     background-repeat: no-repeat; 
+     background-size: cover; 
+     position: relative;
+    
+}
+
+.container img {
+     width: 200px; 
+     height:200px;  
+     margin: 0 20%; 
+     
+}
+
+.content {
+     width: 100% ; 
+     height: calc(100vh-200px);  
+     display: flex;  
+     justify-content: center; 
+     align-items: center;
+     position: relative;
+     
+}
+
+.mainContent {
+      color: white;  
+      position: absolute; 
+      top: 50px;  
+      display: flex; 
+      flex-direction: column;  
+      justify-content: center; 
+      align-items: center;
+      
+}
+
+.mainContent h1 {
+     font-weight: 400; 
+     font-size: 60px; 
+}
+
+.mainContent p {
+      margin-top:5%;
+}
+
+span {
+    color:  goldenrod;
+}
+
+
+.launchTime {
+     display: flex;  
+     justify-content: center    ; 
+     margin-top: 4rem; 
+     padding-left: 100px;
+}
+
+
+.launchTime div {
+      width: 150px;
+}
+
+
+.launchTime div p {
+       font-size:60px; 
+       margin-bottom: 5px;
+}
+
+
+.rocket {
+      width:250px;  
+      position: absolute; 
+      bottom:0; 
+      left: 0; 
+      animation-name: rocket; 
+      animation-duration: 4s; 
+      animation-timing-function: linear; 
+      animation-iteration-count: infinite;
+
+}
+
+@keyframes rocket {
+     from {
+           bottom:0; 
+           opacity: 0;
+     }
+
+     to{
+          bottom:105%;
+          opacity: 1;
+     }
+}
+
